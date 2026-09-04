@@ -1,0 +1,26 @@
+/* Universal Selector */
+*{
+    color: red;
+}
+
+/* Element Selector */
+p{
+    color: blue;
+    text-align: center;
+}
+
+/* ID Selector */
+#mypara{
+    background-color: red;
+    font-size: 30px;
+}
+
+/* Class Selector */
+.paraclass{
+    background-color: blue;
+    color: white;
+}
+
+.para2class{
+    font-size: 25px;
+}

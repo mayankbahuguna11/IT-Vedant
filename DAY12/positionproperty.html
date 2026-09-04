@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .static-box{
+            position: static;
+            /* Static: Element rendrs in order as it appears in the document flow. Default position value */
+            top: 20px;
+        }
+
+        .relative-box{
+            position: relative;
+            /* Relative: The element is positioned relative to its original position */
+            top: 20px;
+            left: 50px;
+        }
+
+        .absolute-box{
+            position: absolute;
+            /* Absolute: The element is removed from the normal document flow and positioned relative to its nearest positioned parent element */
+            top: 70px;
+            left: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="static-box box">One</div>
+    <div class="relative-box box">Two</div>
+    <div class="absolute-box box">Three</div>
+</body>
+</html>

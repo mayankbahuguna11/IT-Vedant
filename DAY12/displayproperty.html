@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .inlineclass{
+            /* The display property specifies the display behavior of an element */
+
+            /* Inline: Displays an element as an inline element. Any height and width properties will have no effect */
+            display: inline-block;
+            /* Inline-block: Displays an element as an inline level block container. Can apply height and width values */
+        }
+
+        .blockclass{
+            display: block;
+            /* Block: Display an element as a block element. It takes up the whole width and starts on a new line */
+        }
+
+        .noneclass{
+            display: none;
+            /* None: Hides the element completely and removes it from the page layout */
+        }
+
+        .flexclass{
+            display: flex;
+            /* Flex: Creates a container to arrange child elements in row or column with flexible alignment */
+            justify-content: center;
+        }
+
+        .gridclass{
+            display: grid;
+            /* Grid: Creates a container to arrange elements in row and columns */
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="box inlineclass">
+        This is a block element
+    </div>
+
+    <div class="box inlineclass">
+        This is another block element
+    </div>
+
+    <a href="" class="blockclass" >Home</a>
+    <a href="" class="blockclass" >About</a>
+    <a href="" class="blockclass" >Login</a>
+    <a href="" class="blockclass" >Signup</a>
+
+    <a href="" class="noneclass">Hello</a>
+    
+    <div class="flexclass">
+        <div class="box">This is flex 1</div>
+        <div class="box">This is flex 2</div>
+        <div class="box">This is flex 3</div>
+    </div>
+
+    <div class="gridclass">
+        <div class="box">This is grid1</div>
+        <div class="box">This is grid2</div>
+        <div class="box">This is grid3</div>
+        <div class="box">This is grid4</div>
+    </div>
+
+</body>
+</html>

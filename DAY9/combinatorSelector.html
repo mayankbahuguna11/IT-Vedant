@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Combinator Selector: Used to define relationships between selectors,
+        allowing styling elements based on their heirarchy or positioning in the document.
+        Types:
+        Descendant Selector
+        Child Selector
+        Adjacent Sibling Selector
+        Genral Sibling Selector*/
+
+        /* Descendent Selector: Target an element inside another element despite nesting level.
+        e.g. <p> within <div> */
+        /* div p{
+            color: red;
+        } */
+
+        /* Child selector: They affect only the direct child elements of a parent. */
+        /* div>p{
+            color: red;
+        } */
+
+        /* Adjacent Sibling Selector: Styles an element immediately following another.
+        e.g. <p>This is para8</p><p>This is para8</p> is directly after <div> tag */
+        /* div+p{
+            color: red;
+        } */
+        
+        /* General Sibing Selector: Styles all elements that follow a specific element */
+        /* div~p{
+            color: red;
+        } */
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is para1</p>
+        <p>This is para2</p>
+        <p>This is para3</p>
+        <p>This is para4</p>
+
+        <span>
+            <p>This is para5</p>
+            <p>This is para6</p>
+            <p>This is para7</p>
+        </span>
+    </div>
+
+    <p>This is para8</p>
+    <p>This is para9</p>
+</body>
+</html>

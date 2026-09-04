@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Pseudo element: Used to select or style a part of the element  */
+
+        /* First Letter: Used to select and style the first letter of an element */
+        /* p::first-letter{
+            color: red;
+            font-size: 25px;
+        } */
+
+        /* Selection: Used to style a portion of the element that the user has highlighted or selected */
+        /* p::selection{
+            background-color: red;
+            color: black;
+        } */
+
+        /* First Line: Used to select and style the first line of an element */
+        /* p::first-line{
+            color: red;
+        } */
+         
+        div::before{
+            content: "Hello, ";
+            color: red;
+            background-color: pink;
+        }
+        
+        div::after{
+            content: " read more...";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>This is paragraph tag</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, exercitationem. Tenetur provident est libero alias dolor sint, molestias ratione porro eveniet praesentium animi voluptate natus suscipit pariatur mollitia distinctio laborum harum quo quibusdam velit autem quis minus. Nulla, nostrum eligendi eveniet, neque omnis molestias odio maiores facilis officiis, autem reprehenderit.</p>
+
+    <div>This is div tag</div>
+</body>
+</html>

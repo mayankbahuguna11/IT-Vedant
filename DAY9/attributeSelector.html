@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Attribute Selector: Targets elements based on the presence or value of their attributes -->
+
+    <!-- Presence Selector: It selects elements that contain a specific attribute -->
+    <style>
+        /* a[href]{
+            color: red;
+        } */
+
+    /* Attribute Value Selector: It targets elements with a particular attribute value */
+    /* a[href="combinatorSelector.html"]{
+        color: red;
+    } */
+    
+    /* Substring Matching (start with): It matches the element where the attribute starts with a substring */
+    /* a[href^="css"]{
+        color: red;
+    } */
+    
+    /* End with Selector: It matches the element where the attribute value ends with a specific substring */
+    /* img[alt$="age"]{
+        color: red;
+    } */
+
+    /* Wildcard Selector (contain with): It matches the element where the attribute contains a specific substring at any position*/
+    /* a[href*="or"]{
+        color: red;
+    } */
+
+    </style>
+</head>
+<body>
+    <a href="combinatorSelector.html">Home</a>
+    <a href="cssSelector.html">About</a>
+    <a href="">Login</a>
+    <a href="">Signin</a>
+    <img src="" alt="demoimage">
+    <img src="" alt="codingimage">
+</body>
+</html>
