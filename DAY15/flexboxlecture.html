@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Flexbox is a css layout system used to easily arrange elements horizontally or vertically. */
+        .container{
+            display: flex;
+            justify-content: center;
+            /* Justify-content: Aligns content horizontally (main-axis) */
+            align-items: center;
+            /* Align-items: Aligns content vertically (cross-axis) */
+            gap: 20px;
+            height: 100vh;
+            flex-direction: row-reverse;
+            /* Controls whether items are arranged in a row or column.
+            row, row-reverse, column & column-reverse. */
+            flex-wrap: wrap;
+            /* flex-wrap: Used in flexbox to allow flex items to move to the next line when there isn't enough space in the container. */
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+        <div class="box">Box9</div>
+        <div class="box">Box10</div>
+        <div class="box">Box11</div>
+        <div class="box">Box12</div>
+        <div class="box">Box13</div>
+        <div class="box">Box14</div>
+        <div class="box">Box15</div>
+    </div>
+</body>
+</html>

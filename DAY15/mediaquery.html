@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: blueviolet;
+            color: antiquewhite;
+            padding: 2px;
+        }
+
+        .box2{
+            background-color: chocolate;
+            color: white;
+            padding: 2px;
+        }
+
+        /* Media query is a css tool that changes styles based on device's features, like its size, shape or resolution.
+        @media [media type] ([media feature)] */
+
+        /* screen: Used to apply styles that only affect devices with screens like computers, tablets and phones.
+        print: Optimizes style for print and print preview.
+        all: Applies styles universally across all devices and media types. */
+
+        /* min-width: requires a minimum width to apply styling. Applies width from given pixel onwards.
+        max-width: It requires a maximum width to apply styling. Applies until a width of pixel. */
+
+        @media screen and (min-width:780px){
+            .container{
+                display: flex;
+            }
+            .box1{
+                background-color: black;
+            }
+            .box2{
+                color: crimson;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="box1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam sequi, suscipit laboriosam provident labore deserunt voluptas id architecto neque consectetur nostrum aliquam asperiores soluta quia repellat, quibusdam nam optio ad necessitatibus reprehenderit rem unde tempore? Illo cumque sequi exercitationem earum?
+        </p>
+
+        <p class="box2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sint veniam non blanditiis. Assumenda porro est sequi ipsa, qui placeat unde iure sunt possimus doloribus optio accusamus ullam nulla dolores recusandae vel laborum architecto quibusdam at sint et quas nam. Numquam suscipit exercitationem animi incidunt, officia minima fuga explicabo sit!
+        </p>
+
+    </div>
+</body>
+</html>
