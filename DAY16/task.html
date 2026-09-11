@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            height: 100vh;
+        }
+
+        img{
+            width: 200px;
+            transition: 0.5s;
+            object-fit: cover;
+            height: 200px;
+            width: 300px;
+        }
+
+        .img1:hover{
+            transform: translate(30px, 30px);
+        }
+
+        .img2:hover{
+            transform: rotate(720deg);
+        }
+
+        .img3:hover{
+            transform: scale(1.2);
+        }
+
+        .img4:hover{
+            transform: skew(25deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="image.png" alt="" class="img1">
+    <img src="image2.png" alt="" class="img2">
+    <img src="image3.png" alt="" class="img3">
+    <img src="image4.png" alt="" class="img4">
+    </div>
+</body>
+</html>
