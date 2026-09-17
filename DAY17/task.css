@@ -1,0 +1,14 @@
+.daily-offers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background: rgb(187, 166, 166);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.offers p span{
+    color: white;
+    background: black;
+    border-radius: 5px;
+}
