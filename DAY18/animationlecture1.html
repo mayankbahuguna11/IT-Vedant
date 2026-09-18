@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 200px;
+            
+            /* Css animation: Used to make HTML elements change their style or position over a period of time without using Javascript. */
+            animation-name: moveBox;
+            /* Specifies @keyframes name */
+            animation-duration: 2s;
+            /* Specifies how long the animation takes */
+            animation-iteration-count: infinite;
+            /* Specifies how many times it runs */
+            animation-direction: alternate;
+            /* Controls the animation direction */
+            animation-delay: 3s;
+            /* Delays the animation before it starts */
+            animation-timing-function: ease;
+            /* Controls speed of the animation */
+        }
+
+        @keyframes moveBox{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(300px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+    
+</body>
+</html>

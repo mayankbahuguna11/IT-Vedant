@@ -1,0 +1,28 @@
+*{
+    background-color: black;
+}
+
+.top-display img{
+        width: 100%;
+        height: 50vh;
+    }
+
+.selection-menu h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 50px 0px;
+}
+    
+.show-container{
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
+}
+
+.show-box img{
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    padding: 5px;
+}
