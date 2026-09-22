@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Z-index: Used to control the stacking order of elements when they overlap. 
+        Higher z-index value appears in front & lower value appears behind */
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 90px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box1</div>
+
+    <div class="box2">Box2</div>
+
+    <!-- Absolute unit: These units don't change based on screen size.
+    e.g. px, pt ,and physical measurements (cm,mm,in).
+
+    Relative unit: These depend on another value like font size or viewport size.
+    e.g. %(relative to parent element), rem(1 rem = 16px), vw, vh. -->
+</body>
+</html>
